@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="simpleCalc.css">
+</head>
+
+<body>
+    <div id="title">This is a Simple Calculator</div>
+    <div id="main">
+        <div id="calculator">
+            <div id="screen">
+                <input type="text" id="input" placeholder="0">
+            </div>
+            <div id="keypad">
+                <div class="col1">
+                    <div class="bttn" id="clear">AC</div>
+                    <div class="bttn" onclick="appendToScreen('7')">7</div>
+                    <div class="bttn" onclick="appendToScreen('4')">4</div>
+                    <div class="bttn" onclick="appendToScreen('1')">1</div>
+                    <div class="bttn" onclick="appendToScreen('0')">0</div>
+                </div>
+                <div class="col2">
+                    <div class="bttn" onclick="clearLastCharacter()">←</div>
+                    <div class="bttn" onclick="appendToScreen('8')">8</div>
+                    <div class="bttn" onclick="appendToScreen('5')">5</div>
+                    <div class="bttn" onclick="appendToScreen('2')">2</div>
+                    <div class="bttn" onclick="appendToScreen('.')">.</div>
+                </div>
+                <div class="col3">
+                    <div class="bttn" onclick="appendToScreen('%')">%</div>
+                    <div class="bttn" onclick="appendToScreen('9')">9</div>
+                    <div class="bttn" onclick="appendToScreen('6')">6</div>
+                    <div class="bttn" onclick="appendToScreen('3')">3</div>
+                </div>
+                <div class="col4">
+                    <div class="bttn" onclick="appendToScreen('/')">/</div>
+                    <div class="bttn" onclick="appendToScreen('*')">*</div>
+                    <div class="bttn" onclick="appendToScreen('-')">-</div>
+                    <div class="bttn" onclick="appendToScreen('+')">+</div>
+                    <div class="bttn" onclick="calculateMe()">=</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="simpleCalc.js"></script>
+</body>
+
+</html>
